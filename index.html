@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,800&display=swap" rel="stylesheet">
     <title>Юля, поздравляем с Днём Рождения!</title>
     <style type="text/css">
+        @font-face {
+            font-family: "Elina";
+            src: url("./Elina.otf");
+            src: url("./Elina.otf");
+        }
         body, html {
             min-height: 100vh;
             padding: 0;
@@ -14,53 +19,112 @@
         }
         .section {
             width: 100%;
+            max-width: 1920px;
             min-height: 100vh;
+            margin: 0 auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding-bottom: 40px;
-            background: url('sportzal.jpg') no-repeat;
-            background-size: cover;
-            font-family: 'Bangers', cursive;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .textContent {
+            width: 100%;
+            max-width: 1920px;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background: linear-gradient(160deg, #EEA7C5 0%, #EEA7C5 38.9%, #5DBCD2 39%, #5DBCD2 100%);
         }
 
         .title {
+            box-sizing: border-box;
             width: 100%;
-            margin: 40px 150px 30px;
-            padding: 0 15px;
-            color: rgb(0, 0, 153);
+            margin: 0;
+            padding: 20px 0;
+            color: white;
             font-size: 50px;
             text-align: center;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 153, 0.8);
-            box-shadow: 0 0 10px rgba(255, 255, 153,0.8); 
+            text-transform: uppercase;
+            background-color: rgba(238, 167, 197);
         }
         .text {
-            width: 100%;
-            margin: 30px 50px;
-            padding: 10px;
+            max-width: 300px;
+            margin: 0 auto 25px;
+            padding: 0 10px;
             text-align: center;
-            font-size: 40px;
-            color: rgb(0, 0, 153);
-            border-radius: 10px;
-            background-color: rgba(255, 255, 153, 0.8);
-            box-shadow: 0 0 10px rgba(255, 255, 153,0.8); 
+            white-space: pre-line;
+            font-size: 20px;
+            color: black;
+        }
+        .text:first-of-type {
+            margin-top: 20px;
+        }
+        .text:last-of-type {
+            margin-bottom: 0;
+        }
+        .psblock {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        .pstext {
+            display: block;
+            font-weight: 800;
+            text-align: center;
+            font-size: 50px;
         }
         .image {
-            width: 430px;
-            height: 430px;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+        }
+        .bottomText {
+            font-family: 'Elina', normal;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
     <section class="section">
-        <h1 class="title">Поздравляем с Днём Рождения!</h1>
-        <img class="image" src="shtanga.gif" alt="С днём Рождения!" />
-
-        <p class="text">
-            Хотим подарить тебе сертификат в спортивный зал!
-        </p>
+        <h1 class="title">с днём рождения, юля!</h1>
+        <img class="image" src="./images.gif" alt="С днём Рождения, Юля!" />
+        <div class="textContent">
+            <p class="text">
+                Сидит Юля у окна, 
+                Волосы считает,
+                Голова её светла
+                Прайсы запускает
+            </p>
+            <p class="text">На лице её очки
+                Блики отражают,
+                Все завидуют качки
+                Слюни распускают
+            </p>
+            <p class="text">Ходит Юля наша в зал,
+                Бёдрышки качает
+                И с улыбкой на лице,
+                Лайки принимает
+            </p>
+            <p class="text">Мы желаем продолжать
+                Спортом заниматься,
+                Вот тебе бери возьми
+                Неделю в фитнес клубе
+            </p>
+    
+            <div class="psblock">
+                <span class="pstext">P.S.</span>
+                <p class="text">Снег на ресницах
+                    Тонус в ягодицах
+                </p>
+            </div>
+            <span class="bottomText">Твои smeшники</span>
+        </div>
     </section>
 </body>
 </html>
